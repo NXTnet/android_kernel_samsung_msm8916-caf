@@ -761,6 +761,13 @@ config SEC_ROSSA_PROJECT
 	help
 	  Support for Samsung Rossa Project
 
+config MACH_ROSSA_EUR_OPEN
+	depends on SEC_ROSSA_PROJECT
+	default n
+	bool "Samsung ROSSA EUR OPEN"
+	help
+	  Support for Samsung ROSSA EUR OPEN device.
+
 config MACH_ROSSA_SPR
     depends on SEC_ROSSA_PROJECT
 	default n
