@@ -213,7 +213,7 @@ ifeq ($(CONFIG_SEC_ROSSA_PROJECT),y)
 		dtb-y += msm8916-sec-rossavzw-r01.dtb
 		dtb-y += msm8916-sec-rossavzw-r02.dtb
 	else ifeq ($(CONFIG_MACH_ROSSA_TMO),y)
-		dtb-y += msm8916-sec-rossa-tmo-r00.dtb
+		dtb-y += msm8916-sec-rossatmo-r00.dtb
 	endif
 endif
 
