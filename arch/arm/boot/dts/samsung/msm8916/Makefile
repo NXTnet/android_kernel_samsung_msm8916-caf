@@ -37,13 +37,9 @@ dtb-$(CONFIG_ARCH_MSMFERRUM) += msmferrum-sim.dtb \
 	msmferrum-1gb-cdp.dtb \
 	msmferrum-1gb-mtp.dtb
 
-ifeq ($(CONFIG_SEC_ROSSA_PROJECT),y)
-	ifeq ($(CONFIG_MACH_ROSSA_EUR_OPEN),y)
-		dtb-y += msm8916-sec-rossa-eur-r00.dtb
-		dtb-y += msm8916-sec-rossa-eur-r01.dtb
-	else ifeq ($(CONFIG_MACH_ROSSA_TMO),y)
-		dtb-y += msm8916-sec-rossa-tmo-r00.dtb
-	endif
+ifeq ($(CONFIG_SEC_ROSSA_EUR_PROJECT),y)
+      dtb-y += msm8916-sec-rossa-eur-r00.dtb
+      dtb-y += msm8916-sec-rossa-eur-r01.dtb
 endif
 
 ifeq ($(CONFIG_SEC_A53G_EUR_PROJECT),y)
@@ -209,7 +205,10 @@ ifeq ($(CONFIG_SEC_FORTUNA_PROJECT),y)
 endif
 
 ifeq ($(CONFIG_SEC_ROSSA_PROJECT),y)
-	ifeq ($(CONFIG_MACH_ROSSA_SPR),y)
+	ifeq ($(CONFIG_MACH_ROSSA_EUR_OPEN),y)
+		dtb-y += msm8916-sec-rossa-eur-r00.dtb
+		dtb-y += msm8916-sec-rossa-eur-r01.dtb
+	else ifeq ($(CONFIG_MACH_ROSSA_SPR),y)
 		dtb-y += msm8916-sec-rossaspr-r00.dtb
 		dtb-y += msm8916-sec-rossaspr-r01.dtb
 		dtb-y += msm8916-sec-rossaspr-r02.dtb
