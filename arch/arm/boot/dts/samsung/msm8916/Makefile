@@ -203,15 +203,6 @@ ifeq ($(CONFIG_SEC_ROSSA_PROJECT),y)
 	ifeq ($(CONFIG_MACH_ROSSA_EUR_OPEN),y)
 		dtb-y += msm8916-sec-rossa-eur-r00.dtb
 		dtb-y += msm8916-sec-rossa-eur-r01.dtb
-	else ifeq ($(CONFIG_MACH_ROSSA_SPR),y)
-		dtb-y += msm8916-sec-rossaspr-r00.dtb
-		dtb-y += msm8916-sec-rossaspr-r01.dtb
-		dtb-y += msm8916-sec-rossaspr-r02.dtb
-		dtb-y += msm8916-sec-rossaspr-r03.dtb
-	else ifeq ($(CONFIG_MACH_ROSSA_VZW),y)
-		dtb-y += msm8916-sec-rossavzw-r00.dtb
-		dtb-y += msm8916-sec-rossavzw-r01.dtb
-		dtb-y += msm8916-sec-rossavzw-r02.dtb
 	else ifeq ($(CONFIG_MACH_ROSSA_TMO),y)
 		dtb-y += msm8916-sec-rossatmo-r00.dtb
 	endif
